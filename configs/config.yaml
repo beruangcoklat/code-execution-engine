@@ -1,0 +1,16 @@
+nsq:
+  nsqlookupd: "localhost:4161"
+  nsqd: "localhost:4150"
+
+cassandra:
+  cluster_ip: "localhost:9042"
+  keyspace: "code_execution_engine"
+
+executor:
+  workdir: "/tmp"
+
+error:
+  prefix: ""
+
+log:
+  logfile: "log/code-execution-engine.log"
