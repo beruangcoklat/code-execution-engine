@@ -92,7 +92,6 @@ func (ex *CPPExecutor) Run(ctx context.Context) (*ExecutionResult, error) {
 }
 
 func (ex *CPPExecutor) Clean(ctx context.Context) error {
-	fmt.Println(ex.buildPath)
 	err := os.RemoveAll(ex.buildPath)
 	if err != nil {
 		return errorlib.AddTrace(err)
